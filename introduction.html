@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.142.0/build/three.min.js"></script>
+</head>
+<body>
+    
+</body>
+<script>
+    console.log(THREE.Scene);
+    //创建3d场景对象
+    const scene = new THREE.Scene();
+    //创建长方体几何对象
+    // const geometry = new THREE.BoxGeometry(100,100,100);
+    //创建一个材质对象Material
+    const material = new THREE.MeshBasicMaterial({
+        color: 0xff0000
+    })
+    //网格模型
+    // const mesh = new THREE.Mesh(geometry,material) //网格模型对象mesh
+    //模型位置
+    // const mesh = new THREE.Mesh(geometry,material)
+    //设置网格模型在三维空间的坐标位置，默认是原点
+    // mesh.position.set(0,10,0)
+    // scene.add(mesh)
+
+    // const camera = new THREE.PerspectiveCamera()
+    // camera.position.set(200,200,200);
+    // console.log(camera);
+
+    // //相机指向目标
+    // camera.lookAt(0,0,0)
+    // camera.lookAt(0,10,0)
+    // camera.lookAt(mesh.position)
+
+    //判断相机相对三维场景中长方体的位置
+    // const geometry = new THREE.BoxGeometry( 100, 100, 100 );
+    // const mesh = new THREE.Mesh(geometry,material);
+    // mesh.position.set(0,10,0)
+    // camera.position.set(200,200,200)
+
+    //相机Canvas画布
+    // const width = 800;
+    // const height = 500;
+
+    //透视投影仪视锥体
+    const camera = new THREE.PerspectiveCamera(30, width / height, 1, 3000);
+    console.log(camera);
+    
+
+</script>
+</html>
